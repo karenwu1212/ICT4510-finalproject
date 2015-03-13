@@ -1,0 +1,102 @@
+
+body {
+	font-size: 16px;
+	background-color: #a91924;
+	color: #FFFFFF;
+	font-family: Tahoma, Geneva, sans-serif;
+
+}
+
+.head {
+	padding-top:20px;
+	background-image: url("../images/header.jpg");
+	height: 400px;
+}
+
+nav {
+	position: relative;
+	top: 300px;
+	background-color: #3c3f41;
+}
+
+
+ul.nav {
+	list-style-type: none;
+	font-size: 30px;
+	position: relative;
+	left: 200px;
+
+}
+
+ul.nav li {
+	display: inline-block;
+	width: 100px;
+}
+
+ul.nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 5px 15px 5px 15px;
+}
+
+ul.nav a:hover {
+	text-decoration: underline;
+}
+
+
+
+table.main {
+	padding-top: 50px;
+	width: 100%;
+}
+
+table.main th {
+	padding: 20px;
+	line-height: 20px;
+	text-align: left;
+}
+
+table.main td {
+	font-size: 50px;
+	font-style: italic;
+}
+
+footer {
+	text-align: center;
+	font-size: 12px;
+}
+
+#contact {
+	color: #3c3f41;
+	border: 2px solid #a1a1a1;
+	background-color: #dddddd;
+	border-radius: 25px;
+}
+
+#contact ul {
+	list-style-type: none;
+}
+
+#contact li {
+	padding: 5px;
+}
+
+#tabs ul {
+	list-style-type: none;
+}
+
+#tabs a {
+	text-decoration: none;
+	color: #a91924;
+}
+
+#images img {
+	border: 2px solid;
+	margin: 5px;
+}
+
+#myinfo {
+	font-size: 12px;
+}
+
+
