@@ -1,26 +1,27 @@
 $(function(){
 	$('#tabs').tabs();  
-	$('#contact').parsley(); 
-
 
 
 	function submitForm(){
 		$('#submit').click(function(e){
-			var formData = $('form').serialize();
-			$.ajax ({
-				url: 'https://httpbin.org/post',
-				type: 'POST',
-				data: formData,
-				dataType: 'html',
-				success: function (data){
-					alert(formData);
-				},
-				error: function (data, errorThrown){
-					alert(errorThrown);
-				}
+			if ($('#contact').parsley().isValid()){
+				var formData = $('form').serialize();
+				$.ajax ({
+					url: 'https://httpbin.org/post',
+					type: 'POST',
+					data: formData,
+					dataType: 'html',
+					success: function (data){
+						alert(formData);
+					},
+					error: function (data, errorThrown){
+						alert(errorThrown);
+					}
 
-			})
-			e.preventDefault();
+				})
+				e.preventDefault();
+			}
+			
 		})
 	}
 	
